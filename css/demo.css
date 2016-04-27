@@ -1,0 +1,42 @@
+
+.content-padded {
+    margin: 0.5rem;
+}
+.icon_lists li {
+    float: left;
+    width: 2.5rem;
+    height: 3rem;
+    text-align: center;
+}
+.icon_lists li div{
+    display: none;
+}
+.icons-demo .ui-icon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.15rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1.25rem;
+    display: inline-block;
+}
+
+
+.btn-demo .ui-btn{
+    margin-bottom: 0.5rem;
+}
+.content-block-title{
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #6d6d72;
+    margin:  1.75rem 0.2rem 0.75rem;
+}

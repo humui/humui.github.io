@@ -2349,17 +2349,13 @@ body .fn-hide {
 .icon-icaccessibility:before { content: "\e6fd"; }
 
 
-.navigate-left:after,
+.icon-navigate-left:after,
 .push-left:after {
     left: 15px;
-    content: '\e822'
+    content: '\e8f1'
 }
 
-.navigate-right:after,
-.push-right:after {
-    right: 15px;
-    content: '\e826'
-}
+
 
 
 
@@ -2370,8 +2366,8 @@ body .fn-hide {
     position: absolute;
     top: 50%;
     display: inline-block;
-    font-family: Ratchicons;
-    font-size: inherit;
+    font-family:"iconfont" !important;
+    font-size: 1.25rem;
     line-height: 1;
     color: #bbb;
     text-decoration: none;
@@ -2383,9 +2379,14 @@ body .fn-hide {
 
 .icon-navigate-right:after,
 .push-right:after {
-    right: 5px;
-    content: '\e826';
+    right: 0.5rem;
+    content: "\e8f2";
 }
+
+
+
+
+
 
 
 /*
@@ -2413,19 +2414,19 @@ body .fn-hide {
     right: 0;
     left: 0;
     z-index: 10;
-    height: 44px;
-    padding-right: 10px;
-    padding-left: 10px;
+    height: 2.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     border-bottom: 0;
     background-color: #6cbff1;
 }
 
 .ui-toolbar .fn-left {
-    margin-right: 10px;
+    margin-right: 0.5rem;
 }
 
 .ui-toolbar .fn-right {
-    margin-left: 10px;
+    margin-left: 0.5rem;
 }
 
 .ui-toolbar .ui-toolbar-title {
@@ -2433,10 +2434,10 @@ body .fn-hide {
     display: block;
     width: 100%;
     padding: 0;
-    margin: 0 -10px;
-    font-size: 17px;
+    margin: 0 -0.5rem;
+    font-size: 0.85rem;
     font-weight: 500;
-    line-height: 44px;
+    line-height: 2.2rem;
     background-color: #6cbff1;
     color: #fff;
     text-align: center;
@@ -2446,15 +2447,15 @@ body .fn-hide {
 .ui-toolbar .ui-toolbar-btn {
     position: relative;
     display: inline-block;
-    font-size: 12px;
+    font-size: 0.7rem;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
     vertical-align: top;
     cursor: pointer;
-    top: 8px;
+    top: 0.4rem;
     z-index: 20;
-    padding: 6px 12px 7px;
+    padding: 0.3rem 0.6rem 0.35rem;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
@@ -2475,10 +2476,10 @@ body .fn-hide {
 .ui-toolbar .ui-icon {
     position: relative;
     z-index: 20;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 24px;
+    top: -0.05rem;
+    font-size: 1.6rem;
     vertical-align: middle;
+    color: #fff;
 }
 
 .ui-toolbar a {
@@ -2492,8 +2493,9 @@ body .fn-hide {
 .ui-toolbar .ui-btn-link {
     top: 0;
     padding: 0;
-    font-size: 16px;
-    line-height: 44px;
+    font-size: 0.8rem;
+    height: 2.2rem;
+    padding-top: 0.4rem;
     color: #fff;
     background-color: transparent;
     border: none;
@@ -2506,11 +2508,11 @@ body .fn-hide {
 }
 
 .ui-toolbar .ui-btn-link.fn-left {
-    margin-left: -5px;
+    margin-left: -0.25rem;
 }
 
 .ui-toolbar .ui-btn-link.fn-right {
-    margin-right: -5px;
+    margin-right: -0.25rem;
 }
 
 
@@ -2518,7 +2520,7 @@ body .fn-hide {
 
 .ui-toolbar .ui-tab {
     position: relative;
-    top: 8px;
+    top: 0.4rem;
     margin: 0 auto;
 }
 
@@ -2546,10 +2548,10 @@ body .fn-hide {
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 10;
+    z-index: 10000;
     display: table;
     width: 100%;
-    height: 50px;
+    height: 2.5rem;
     padding: 0;
     table-layout: fixed;
     background-color: rgba(247, 247, 247, .98);
@@ -2557,12 +2559,13 @@ body .fn-hide {
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .85);
     box-shadow: 0 0 1px rgba(0, 0, 0, .85);
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .ui-navbar .ui-navbar-item {
     display: table-cell;
     width: 1%;
-    height: 50px;
+    height: 2.5rem;
     color: #929292;
     text-align: center;
     vertical-align: middle;
@@ -2576,18 +2579,18 @@ body .fn-hide {
 .ui-navbar .ui-navbar-item .ui-icon {
     position: relative;
     z-index: 20;
-    top: 7px;
-    font-size: 24px;
-    width: 24px;
-    height: 24px;
+    top: 0.3rem;
+    font-size: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .ui-navbar .ui-navbar-item .ui-navbar-item-label {
     display: block;
-    font-size: 11px;
-    margin-top: 5px;
+    font-size: 0.6rem;
+    margin-top: 0.15rem;
 }
 
 
@@ -2708,16 +2711,16 @@ body .fn-hide {
 */
 
 .ui-search {
-    padding: 10px 12px;
+    padding: 0.5rem 0.6rem;
 }
 
 .ui-search-container {
     display: block;
     position: relative;
     width: auto;
-    height: 30px;
+    height: 1.5rem;
     margin-left: 0;
-    padding-right: 90px;
+    padding-right: 4.5rem;
     background-color: #fff;
     border: 1px solid #999;
 }
@@ -2725,16 +2728,16 @@ body .fn-hide {
 .ui-search-input {
     font-family: inherit;
     width: 100%;
-    height: 28px;
+    height: 1.4rem;
     margin-right: 0;
     border: 0;
     border-radius: 0;
     background: #fff;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
     font-weight: 400;
     color: #999;
-    text-indent: 10px;
+    text-indent: 0.5rem;
     vertical-align: top;
     -webkit-appearance: none;
     /*reset*/
@@ -2745,14 +2748,14 @@ body .fn-hide {
 .ui-search-close {
     position: absolute;
     top: 0;
-    right: 55px;
-    width: 28px;
-    height: 28px;
+    right: 2.75rem;
+    width: 1.4rem;
+    height: 1.4rem;
     text-align: center;
 }
 
 .ui-search-container .ui-icon {
-    margin-top: 3px;
+    margin-top: 0.15rem;
     color: #999;
 }
 
@@ -2760,8 +2763,8 @@ body .fn-hide {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50px;
-    height: 28px;
+    width: 2.5rem;
+    height: 1.4rem;
     text-align: center;
     border-left: 1px solid #ccc;
     background: #f3f3f3;
@@ -2792,14 +2795,14 @@ body .fn-hide {
 
 .ui-nav {
     width: 100%;
-    font-size: 16px;
+    font-size: 0.8rem;
     position: relative;
 }
 
 .ui-nav .ui-nav-main {
-    height: 40px;
+    height: 2rem;
     background-color: #6CBFF1;
-    padding: 0 50px 0 0;
+    padding: 0 2.5rem 0 0;
     margin: 0;
 }
 
@@ -2810,9 +2813,9 @@ body .fn-hide {
 .ui-nav .ui-nav-main .ui-nav-item {
     float: left;
     width: 20%;
-    height: 20px;
-    line-height: 20px;
-    margin-top: 10px;
+    height: 1rem;
+    line-height: 1rem;
+    margin-top: 0.5rem;
     list-style: none;
 }
 
@@ -2825,9 +2828,9 @@ body .fn-hide {
 
 .ui-nav .ui-nav-btn {
     display: block;
-    width: 49px;
-    height: 38px;
-    line-height: 38px;
+    width: 2.45rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
     border-left: 1px solid #7FCEFD;
     position: absolute;
     text-align: center;
@@ -2837,15 +2840,15 @@ body .fn-hide {
 
 .ui-nav .ui-nav-btn .ui-icon {
     color: #fff;
-    margin-top: 7px;
+    font-size: 1.6rem;
 }
 
 .ui-nav .ui-nav-sub {
-    width: 50px;
+    width: 2.5rem;
     height: auto;
     overflow: hidden;
     position: absolute;
-    top: 40px;
+    top: 2rem;
     right: 0;
     z-index: 99;
     list-style: none;
@@ -2858,8 +2861,8 @@ body .fn-hide {
 
 .ui-nav .ui-nav-sub li a {
     display: block;
-    height: 36px;
-    line-height: 36px;
+    height: 1.8rem;
+    line-height: 1.8rem;
     background: #6CBFF1;
     color: #FFF;
     text-align: center;
@@ -2889,17 +2892,17 @@ body .fn-hide {
 
 .ui-category {
     text-align: center;
-    padding-bottom: 12px;
+    padding-bottom: 0.6rem;
     background-color: #fff;
 }
 
 .ui-category-item {
     width: 25%;
-    padding: 13px 0 0;
+    padding: 0.65rem 0 0;
     display: block;
     float: left;
     color: #333;
-    font-size: 14px;
+    font-size: 0.7rem;
     text-decoration: none;
     position: relative;
     box-sizing: border-box;
@@ -2918,17 +2921,17 @@ body .fn-hide {
     display: block;
     border-radius: 2px;
     -webkit-border-radius: 2px;
-    width: 42px;
-    height: 42px;
-    margin: 0 auto 8px;
-    background-size: 20px auto;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin: 0 auto 0.4rem;
+    background-size: 1rem auto;
     color: #333;
     position: relative;
 }
 
 .ui-category-icon .ui-icon {
     color: #fff;
-    margin-top: 8px;
+    font-size: 1.4rem;
 }
 
 .ui-color-1 {
@@ -3000,11 +3003,11 @@ body .fn-hide {
     position: relative;
     display: table;
     overflow: hidden;
-    font-size: 12px;
+    font-size: 0.7rem;
     font-weight: 400;
     background-color: #fff;
     border: 1px solid #4CB9EC;
-    border-radius: 3px;
+    border-radius: 0.15rem;
 }
 
 .ui-tab-nav li {
@@ -3061,24 +3064,24 @@ body .fn-hide {
 .ui-list {
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0.75rem;
     list-style: none;
     background-color: #fff;
 }
 
 .ui-list .ui-list-item {
     position: relative;
-    padding: 11px 20px 11px 15px;
+    padding: 0.55rem 1rem 0.55rem 0.75rem;
     overflow: hidden;
     border-bottom: 1px solid #ddd;
 }
 
 .ui-list .ui-list-item img {
-    width: 100px;
+    width: 5rem;
 }
 
 .ui-list .ui-list-item h4 {
-    font-size: 16px;
+    font-size: 0.8rem;
 }
 
 .ui-list .ui-list-item:active {
@@ -3090,24 +3093,25 @@ body .fn-hide {
     position: relative;
     display: block;
     padding: inherit;
-    margin: -11px -20px -11px -15px;
+    margin: -0.55rem -1rem -0.55rem -0.75rem;
     overflow: hidden;
     color: #333;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 .ui-list-item .ui-icon {
+    font-size: 1.4rem;
     color: #4CB9EC;
 }
 
 .ui-list-item p {
-    margin: 0 0 5px 0;
+    margin: 0 0 0.25rem 0;
 }
 
 .ui-badge {
     display: inline-block;
-    padding: 2px 9px 3px;
-    font-size: 12px;
+    padding: 0.1rem 0.45rem 0.15rem;
+    font-size: 0.6rem;
     line-height: 1;
     color: #333;
     background-color: rgba(0, 0, 0, .15);
@@ -3117,14 +3121,14 @@ body .fn-hide {
 .ui-list-item .ui-badge {
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 0.75rem;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 .ui-list-item .icon-navigate-right .ui-badge {
-    right: 35px;
+    right: 1.75rem;
 }
 
 .ui-list .ui-media {
@@ -3132,11 +3136,12 @@ body .fn-hide {
 }
 
 .ui-media .fn-left {
-    margin-right: 10px;
+    margin-right: 0.5rem;
 }
 
 .ui-media .ui-media-body {
     overflow: hidden;
+    padding-top: 0.4rem;
 }
 
 
@@ -3299,8 +3304,8 @@ body .fn-hide {
 .ui-btn {
     position: relative;
     display: inline-block;
-    padding: 7px 12px 8px;
-    font-size: 12px;
+    padding: 0.35rem 0.6rem 0.4rem;
+    font-size: 0.7rem;
     font-weight: 400;
     line-height: 1;
     text-align: center;
@@ -3367,8 +3372,8 @@ body .fn-hide {
 }
 
 .ui-btn-link {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     color: #428bca;
     background-color: transparent;
     border: 1px solid transparent;
@@ -3383,8 +3388,8 @@ body .fn-hide {
 .ui-btn-block {
     display: block;
     width: 100%;
-    padding: 10px 0;
-    font-size: 16px
+    padding: 0.5rem 0;
+    font-size: 0.8rem
 }
 
 input[type=button],
@@ -3394,8 +3399,8 @@ input[type=submit] {
 }
 
 .ui-btn .ui-badge {
-    margin: -2px -4px -2px 4px;
-    font-size: 12px;
+    margin: -0.1rem -0.2rem;
+    font-size: 0.6rem;
     background-color: rgba(0, 0, 0, .15)
 }
 
@@ -3413,7 +3418,7 @@ input[type=submit] {
 .ui-btn-block .ui-badge {
     position: absolute;
     right: 0;
-    margin-right: 10px
+    margin-right: 0.5rem
 }
 
 .ui-btn .ui-icon {
@@ -3422,8 +3427,8 @@ input[type=submit] {
 
 .ui-badge {
     display: inline-block;
-    padding: 2px 9px 3px;
-    font-size: 12px;
+    padding: 0.1rem 0.45rem 0.15rem;
+    font-size: 0.6rem;
     line-height: 1;
     color: #fff;
     background-color: rgba(0, 0, 0, .15);

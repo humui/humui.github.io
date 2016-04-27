@@ -1,182 +1,146 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>HumUI</title>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HumUI Demo</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="亚信UED">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="dist/css/hum.css"/>
-    <link rel="stylesheet" href="css/example.css"/>
+    <link rel="stylesheet" href="dist/css/page.css"/>
+    <link rel="stylesheet" href="css/demo.css"/>
 </head>
-<body ontouchstart>
-    <div class="container" id="container">
+<div class="page-group">
+    <div class="page page-current" id='routers-index'>
+         <header class="ui-toolbar">
+            <h1 class="ui-toolbar-title">Hum UI</h1>
+        </header>
+        <div class="content">
+            <ul class="ui-list">
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/btn.html">按钮 Button </a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="#toolbar-list">工具栏 Toolbar</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/navbar.html">导航栏 Navbar</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/nav.html">导航 Nav</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/category.html">类目 Category</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/tab.html">页签 Tab</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="#step-list">步骤 Step</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/search.html">搜索 Search</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="#list-list">列表 List</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/iconfont.html">字体图标</a>
+                </li>
+               
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="src/dialog.html">对话框 dialog</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="src/tips.html">提示 tips</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="src/loading.html">加载 loading</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <script type="text/html" id="tpl_home">
-<div class="hd">
-    <h1 class="page_title">Hum UI</h1>
-    <p class="page_desc">简单易用，行业定制</p>
-</div>
-<div class="bd">
-    <div class="grids">
-        <a href="#/button" class="grid">
-            <div class="grid_icon">
-                <i class="ui-icon icon-centerfocusweak"></i>
-            </div>
-            <p class="grid_label">
-                Button
-            </p>
-        </a>
-        <a href="#/cell" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_cell"></i>
-            </div>
-            <p class="grid_label">
-                Cell
-            </p>
-        </a>
-        <a href="#/toast" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_toast"></i>
-            </div>
-            <p class="grid_label">
-                Toast
-            </p>
-        </a>
-        <a href="#/dialog" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_dialog"></i>
-            </div>
-            <p class="grid_label">
-                Dialog
-            </p>
-        </a>
-        <a href="#/progress" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_progress"></i>
-            </div>
-            <p class="grid_label">
-                Progress
-            </p>
-        </a>
-        <a href="#/msg" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_msg"></i>
-            </div>
-            <p class="grid_label">
-                Msg
-            </p>
-        </a>
-        <a href="#/article" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_article"></i>
-            </div>
-            <p class="grid_label">
-                Article
-            </p>
-        </a>
-        <a href="#/actionsheet" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_actionSheet"></i>
-            </div>
-            <p class="grid_label">
-                ActionSheet
-            </p>
-        </a>
-        <a href="#/icons" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_icons"></i>
-            </div>
-            <p class="grid_label">
-                Icons
-            </p>
-        </a>
-        <a href="#/panel" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_panel"></i>
-            </div>
-            <p class="grid_label">
-                Panel
-            </p>
-        </a>
-        <a href="#/tab" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_tab"></i>
-            </div>
-            <p class="grid_label">
-                Tab
-            </p>
-        </a>
-        <a href="#/searchbar" class="grid">
-            <div class="grid_icon">
-                <i class="icon icon_search_bar"></i>
-            </div>
-            <p class="grid_label">
-                SearchBar
-            </p>
-        </a>
+    <div class="page" id="toolbar-list">
+        <header class="ui-toolbar">
+            <a class="ui-toolbar-btn ui-btn-link fn-left back">
+                <span class="ui-icon icon-chevronleft"></span>返回
+            </a>
+            <h1 class="ui-toolbar-title">工具栏</h1>
+        </header>
+        <div class="content">
+            <ul class="ui-list">
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/toolbar-1.html">标题</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/toolbar-2.html">按钮 + 标题</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/toolbar-3.html">图标 + 标题</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/toolbar-4.html">图文 + 标题</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="hd">
-    <p class="page_desc">基础定制</p>
-</div>
-</script>
-    <script type="text/html" id="tpl_button">
-<div class="hd">
-    <h1 class="page_title">Button</h1>
-</div>
-<div class="bd spacing">
-    <button class="ui-btn ui-btn-block">默认</button>
-    <button class="ui-btn ui-btn-block ui-btn-disabled">不可选</button>
-    <button class="ui-btn ui-btn-block ui-btn-white">白色</button>
-    <button class="ui-btn ui-btn-block ui-btn-green">绿色</button>
-    <button class="ui-btn ui-btn-block ui-btn-red">红色</button>
-    <button class="ui-btn">默认</button>
-    <button class="ui-btn ui-btn-white">白色</button>
-    <button class="ui-btn ui-btn-green">绿色</button>
-    <button class="ui-btn ui-btn-red">红色</button>
-    <button class="ui-btn">
-        我的收信
-        <span class="ui-badge">10</span>
-    </button>
-    <button class="ui-btn ui-btn-link">
-        <span class="ui-icon icon-left"></span>
-        返回
-    </button>
-    <button class="ui-btn">
-        <span class="ui-icon icon-search"></span>
-        搜索
-    </button>
-    <button class="ui-btn ui-btn-white">
-        <span class="ui-icon icon-person"></span>
-        通讯录
-    </button>
-    <button class="ui-btn ui-btn-green">
-        <span class="ui-icon icon-play"></span>
-        播放
-    </button>
-    <button class="ui-btn ui-btn-red">
-        <span class="ui-icon icon-trash"></span>
-        删除
-    </button>
-
-    <button class="ui-btn">
-        我的收信
-        <span class="ui-badge">10</span>
-    </button>
-    <div class="ui-panel-content">
-        <button class="ui-btn ui-btn-block">默认</button>
+    <div class="page" id="step-list">
+        <header class="ui-toolbar">
+            <a class="ui-toolbar-btn ui-btn-link fn-left back">
+                <span class="ui-icon icon-chevronleft"></span>返回
+            </a>
+            <h1 class="ui-toolbar-title">步骤</h1>
+        </header>
+        <div class="content">
+            <ul class="ui-list">
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/step-1.html">步骤二</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/step-2.html">步骤三</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/step-3.html">步骤四</a>
+                </li>
+                
+            </ul>
+        </div>
     </div>
-    <div class="ui-panel-content">  
-        <div class="ui-btn-group">
-            <button class="ui-btn ui-btn-block">提交</button>
-            <button class="ui-btn ui-btn-block ui-btn-white">返回</button>
-        </div> 
+    <div class="page" id="list-list">
+        <header class="ui-toolbar">
+            <a class="ui-toolbar-btn ui-btn-link fn-left back">
+                <span class="ui-icon icon-chevronleft"></span>返回
+            </a>
+            <h1 class="ui-toolbar-title">列表</h1>
+        </header>
+        <div class="content">
+            <ul class="ui-list">
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/list-1.html">普通列表</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/list-2.html">统计列表</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/list-3.html">图标列表</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/list-4.html">图文列表</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/list-5.html">区块列表(Panel)</a>
+                </li>
+                
+            </ul>
+        </div>
     </div>
 </div>
-</script>
-    
-    <script src="js/zepto.min.js"></script>
-    <script src="js/router.min.js"></script>
-    <script src="js/example.js"></script>
+<script src="dist/lib/zepto/zepto.min.js"></script>
+<script src="dist/js/hum.min.js"></script>
 </body>
 </html>
