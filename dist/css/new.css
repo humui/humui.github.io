@@ -1,0 +1,170 @@
+
+/*面包屑*/
+.ui-breadcrumb {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  font-family: '微软雅黑';
+  font-weight: normal;
+}
+.ui-breadcrumb .ui-breadcrumb-item {
+  display: inline-block;
+  text-align: center;
+}
+.ui-breadcrumb .ui-breadcrumb-item .ui-icon{
+    font-size: 20px;
+    vertical-align: middle;
+    padding-right: 3px;
+}
+.ui-breadcrumb .ui-breadcrumb-item.active {
+  color: #0e90d2;
+}
+.ui-breadcrumb .ui-breadcrumb-item > [class*=ui-icon-] {
+  padding-right: 3px;
+}
+.ui-breadcrumb > li + li:before {
+  display: inline-block;
+  font: normal normal normal 1.8rem/1 "iconfont", sans-serif;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  content: "\e8f2";
+  color: #ccc;
+}
+.ui-breadcrumb.ui-slash-split > li + li:before {
+  content: "/";
+  padding: 0 3px 0 0;
+  color: #ccc;
+  box-sizing: border-box;
+}
+
+
+/* 分页条 */
+.ui-pager {
+  display: inline-block;
+  height: 1.8rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-size: 0.7rem;
+  font-family: '微软雅黑';
+  line-height: 1.7rem;
+}
+.ui-pager > li {
+  display: block;
+  margin: 0;
+  float: left;
+  border: 1px solid #ccc;
+  border-left: none;
+  color: #0e90d2;
+  overflow: hidden;
+  height: 1.7rem;
+  width: auto;
+}
+.ui-pager > li:first-child {
+  border-left: 1px solid #ccc;
+  border-radius: inherit;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ui-pager > li:last-child {
+  border-left: none;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.ui-pager > li.prev > span {
+  display: inline-block;
+  margin-right: 0.5rem;
+  height: 1.7rem;
+}
+.ui-pager > li.prev:hover,
+.ui-pager > li.prev:active {
+  background-color: #0e90d2;
+  color: #ffffff;
+}
+.ui-pager > li.next > span {
+  display: inline-block;
+  margin-left: 0.5rem;
+  height: 1.7rem;
+}
+.ui-pager > li.next:hover,
+.ui-pager > li.next:active {
+  background-color: #0e90d2;
+  color: #ffffff;
+}
+.ui-pager > li > [class*=ui-icon-] {
+  padding: 0 0.5rem;
+  height: 1.7rem;
+}
+.ui-pager > li > a {
+  display: block;
+  padding: 0 0.5rem;
+  height: 1.7rem;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+}
+.ui-pager > li > a:hover,
+.ui-pager > li > a:active {
+  background-color: #0e90d2;
+  color: #ffffff;
+}
+.ui-pager > li.active {
+  background-color: #0e90d2;
+}
+.ui-pager > li.active > a {
+  color: #ffffff;
+}
+.ui-pager > li.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.ui-pager > li.disabled:hover,
+.ui-pager > li.disabled:active {
+  background-color: #ffffff;
+  color: #ccc;
+}
+.ui-pager.ui-pager-pills {
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+}
+.ui-pager.ui-pager-pills.ui-pager-loose > li {
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  border-radius: 0.6rem;
+}
+.ui-pager.ui-pager-loose > li {
+  margin-left: 0.25rem;
+  border: 1px solid #ccc;
+}
+.ui-pager.pager-justify {
+  width: 100%;
+}
+.ui-pager.pager-justify .prev {
+  float: left;
+}
+.ui-pager.pager-justify .next {
+  float: right;
+  border-left: 1px solid #ccc;
+}
