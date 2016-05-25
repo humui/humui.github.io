@@ -476,8 +476,12 @@ a:active {
   height: 1.7rem;
 }
 
-.ui-toolbar ~ .content,.ui-nav ~ .content {
+.ui-toolbar ~ .content,.ui-nav ~ .content{
     top: 2.2rem;
+}
+
+.ui-toolbar ~ .pull-to-refresh-content {
+  top:0; 
 }
 
 .ui-navbar ~ .content {
