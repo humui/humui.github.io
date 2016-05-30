@@ -1729,7 +1729,7 @@ textarea {
   border-radius: 3px;
   outline: none;
 }
-select,
+/* select,
 input[type="text"],
 input[type="search"],
 input[type="password"],
@@ -1754,7 +1754,7 @@ input[type="time"] {
   border: 1px solid rgba(0, 0, 0, .2);
   border-radius: 3px;
   outline: none;
-}
+} */
 .aui-form {
   position: relative;
   background: #ffffff;
