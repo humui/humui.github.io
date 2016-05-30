@@ -27,14 +27,38 @@
         </header>
         <div class="content">
             <ul class="ui-list">
-            <li class="ui-list-item">
-                <a class="icon-navigate-right" href="demo/bottom-infinite-scroll.html">底部无限滚动 Infinite-Scroll</a>
-                </li>
                 <li class="ui-list-item">
-                    <a class="icon-navigate-right" href="demo/top-infinite-scroll.html">顶部无限滚动 Infinite-Scroll</a>
+                    <a class="icon-navigate-right" href="#infinite-scroll">无限滚动 Infinite-Scroll</a>
                 </li>
                 <li class="ui-list-item">
                     <a class="icon-navigate-right" href="demo/pull-to-refresh.html">下拉刷新 Pull-to-refresh</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="#preloader">加载提示 Preloader</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/actions.html">操作表 Actions</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/modal.html">对话框 modal</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/photo-browser.html">图片浏览器 Photo-browser</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/calendar.html">日历 Calendar</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/datetime-picker.html">日期时间 Datetime</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/city-picker.html">省市区选择 City-picker</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/picker.html">选择 Picker</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/swiper.html">幻灯片 Swiper </a>
                 </li>
                 <li class="ui-list-item">
                     <a class="icon-navigate-right" href="demo/card.html">卡片 Card</a>
@@ -150,18 +174,14 @@
                <li class="ui-list-item">
                     <a class="icon-navigate-right" href="demo/collapse.html">折叠 collapse</a>
                 </li>
-                <li class="ui-list-item">
-                    <a class="icon-navigate-right" href="demo/dialog.html">对话框 Dialog</a>
-                </li>
-                <li class="ui-list-item">
-                    <a class="icon-navigate-right" href="demo/actionsheet.html">菜单 Actionsheet </a>
-                </li>
-                <li class="ui-list-item">
-                    <a class="icon-navigate-right" href="demo/swiper.html">幻灯片 Swiper </a>
-                </li>
-                <li class="ui-list-item">
-                    <a class="icon-navigate-right" href="demo/city-picker.html">省市联动 City-Picker</a>
-                </li>
+               <!--  <li class="ui-list-item">
+                   <a class="icon-navigate-right" href="demo/dialog.html">对话框 Dialog</a>
+               </li>
+               <li class="ui-list-item">
+                   <a class="icon-navigate-right" href="demo/actionsheet.html">菜单 Actionsheet </a>
+               </li> -->
+                
+                
                 <li class="ui-list-item">
                     <a class="icon-navigate-right" href="demo/backtop.html">返回顶部 Backtop</a>
                 </li>
@@ -334,11 +354,47 @@
             </ul>
         </div>
     </div>
+    <div class="page" id="infinite-scroll">
+        <header class="ui-toolbar">
+            <a class="ui-toolbar-btn ui-btn-link fn-left back">
+                <span class="ui-icon icon-chevronleft"></span>返回
+            </a>
+            <h1 class="ui-toolbar-title">无限滚动</h1>
+        </header>
+        <div class="content">
+            <ul class="ui-list">
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/bottom-infinite-scroll.html">底部下拉更新</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/top-infinite-scroll.html">顶部下拉更新</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page" id="preloader">
+        <header class="ui-toolbar">
+            <a class="ui-toolbar-btn ui-btn-link fn-left back">
+                <span class="ui-icon icon-chevronleft"></span>返回
+            </a>
+            <h1 class="ui-toolbar-title">加载提示</h1>
+        </header>
+        <div class="content">
+            <ul class="ui-list">
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/indicator.html">迷你加载提示</a>
+                </li>
+                <li class="ui-list-item">
+                    <a class="icon-navigate-right" href="demo/indicator-preloader-title.html">带标题的加载指示器</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 <script src="dist/lib/zepto/zepto.min.js"></script>
-<script src="dist/js/hum.min.js"></script>
-<script src="dist/js/hum-extend.min.js"></script>
-<script src="dist/js/hum-city-picker.js"></script>
-<script src="dist/js/demo.js"></script>
+<script src="dist/sm/sm.js"></script>
+<script src="dist/sm/sm-extend.js"></script>
+<script src="dist/sm/sm-city-picker.js"></script>
+<script src="dist/sm/demos.js"></script>
 </body>
 </html>
