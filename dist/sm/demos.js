@@ -1,6 +1,14 @@
 $(function () {
   'use strict';
 
+    //折叠
+    $(document).on("pageInit", "#page-collapse", function(e, id, page) {
+        $(".ui-selector-item").click(function(){
+            $(this).toggleClass('active');
+        }) 
+    });
+
+
   //下拉刷新页面
   $(document).on("pageInit", "#page-ptr", function(e, id, page) {
     var $content = $(page).find(".content").on('refresh', function(e) {

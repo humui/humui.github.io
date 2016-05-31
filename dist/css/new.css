@@ -75,6 +75,7 @@
   overflow: hidden;
   height: 1.7rem;
   width: auto;
+  padding: 0 0.2rem;
 }
 .ui-pager > li:first-child {
   border-left: 1px solid #ccc;
@@ -140,7 +141,7 @@
   background-color: #ffffff;
   color: #ccc;
 }
-.ui-pager.ui-pager-pills {
+/* .ui-pager.ui-pager-pills {
   -webkit-border-radius: 0.6rem;
   -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
@@ -153,7 +154,7 @@
   -ms-border-radius: 0.6rem;
   -o-border-radius: 0.6rem;
   border-radius: 0.6rem;
-}
+} */
 .ui-pager.ui-pager-loose > li {
   margin-left: 0.25rem;
   border: 1px solid #ccc;
